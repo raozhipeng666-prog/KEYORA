@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KEYORA｜防盗水瓶袋（带一体式锁体）</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="KEYORA_logo_transparent.png" alt="KEYORA" class="logo">
+    <nav class="nav">
+      <button id="btn-cn" class="btn on">中文</button>
+      <button id="btn-en" class="btn">EN</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="title cn">更安全的随行饮水携带方案</h1>
+      <h1 class="title en" style="display:none">Safer On-the-go Hydration</h1>
+      <p class="subtitle cn">防盗水瓶袋（带一体式锁体）｜双拉片插入即自锁</p>
+      <p class="subtitle en" style="display:none">Anti-theft bottle bag with integrated lock | Dual pullers auto-lock</p>
+      <div class="cta">
+        <a class="btn primary" href="KEYORA_招商引资简介_大Logo正式版_含联系_2025-10-22.pdf" target="_blank">下载招商PDF</a>
+        <a class="btn" href="KEYORA_招商引资_路演PPT_中文版_16x9.pptx" target="_blank">下载路演PPT</a>
+        <a class="btn" href="KEYORA_OnePager_CN.pdf" target="_blank">下载一页版</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3 class="cn">痛点与洞察</h3>
+        <h3 class="en" style="display:none">Problem & Insight</h3>
+        <p class="cn">通勤/短途/轻徒步：水具易磕碰、易误开、背包内滚动；现有瓶套缺少“安全锁止”。</p>
+        <p class="en" style="display:none">Bottles get scuffed, open accidentally or roll in bags; generic sleeves lack safety locking.</p>
+      </div>
+      <div class="card">
+        <h3 class="cn">解决方案</h3>
+        <h3 class="en" style="display:none">Solution</h3>
+        <p class="cn">一体式锁体与袋口结构；半包覆安装座与受力肋；导向斜面、反挑窄缝、静音缓冲与可视确认。</p>
+        <p class="en" style="display:none">Integrated lock & mouth; semi-wrap mount & ribs; guiding ramps, anti-shim slit, silent buffer, visual confirmation.</p>
+      </div>
+      <div class="card">
+        <h3 class="cn">供应链与里程碑</h3>
+        <h3 class="en" style="display:none">Supply Chain & Milestones</h3>
+        <p class="cn">宁波/义乌/永康链条；7–10天通用锁芯定制打样；10–25天半/全定制完善治具与SOP。</p>
+        <p class="en" style="display:none">Ningbo/Yiwu/Yongkang cluster; 7–10d proto; 10–25d semi/full custom with fixtures & SOP.</p>
+      </div>
+      <div class="card">
+        <h3 class="cn">IP 与合规</h3>
+        <h3 class="en" style="display:none">IP & Compliance</h3>
+        <p class="cn">商标：KEYORA / RAOZP；外观设计与实用新型已提交。</p>
+        <p class="en" style="display:none">Trademarks: KEYORA / RAOZP; design & utility model submitted.</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 class="cn">联络我们</h2>
+      <h2 class="en" style="display:none">Contact</h2>
+      <p class="cn">手机 / 微信：15068963932</p>
+      <p class="en" style="display:none">Phone / WeChat: +86 150 6896 3932</p>
+      <a href="wechat_qr_square_1024.png" target="_blank" title="点击查看原图"><img src="wechat_qr_square_512.png" srcset="wechat_qr_square_512.png 1x, wechat_qr_square_1024.png 2x" alt="WeChat QR" class="qr"></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="RAOZP_logo_transparent.png" alt="RAOZP" class="secondary">
+    <p>© 2025 KEYORA. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const cnEls = document.querySelectorAll('.cn');
+    const enEls = document.querySelectorAll('.en');
+    const btnCN = document.getElementById('btn-cn');
+    const btnEN = document.getElementById('btn-en');
+    function setLang(lang) {
+      const showCN = lang === 'cn';
+      cnEls.forEach(el => el.style.display = showCN ? 'block' : 'none');
+      enEls.forEach(el => el.style.display = showCN ? 'none' : 'block');
+      btnCN.classList.toggle('on', showCN);
+      btnEN.classList.toggle('on', !showCN);
+    }
+    setLang('cn');
+    btnCN.addEventListener('click', () => setLang('cn'));
+    btnEN.addEventListener('click', () => setLang('en'));
+  </script>
+</body>
+</html>
