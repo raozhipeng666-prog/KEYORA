@@ -81,13 +81,15 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <img src="RAOZP_logo_transparent.png" alt="RAOZP" class="secondary">
-    <p>© 2025 KEYORA. All rights reserved.</p>
-  </footer>
+ <footer class="footer">
+  <img src="RAOZP_logo_transparent.png" alt="RAOZP" class="secondary">
+  <p>© <span id="year"></span> RAOZP. All rights reserved.</p>
+</footer>
+
 
   <script>
     const cnEls = document.querySelectorAll('.cn');
+    document.getElementById('year').textContent = new Date().getFullYear();
     const enEls = document.querySelectorAll('.en');
     const btnCN = document.getElementById('btn-cn');
     const btnEN = document.getElementById('btn-en');
