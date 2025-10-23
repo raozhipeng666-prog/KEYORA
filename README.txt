@@ -5,4 +5,4 @@ KEYORA 招商落地页（GitHub Pages）
   - A 记录（@）指向 185.199.108.153 / 109.153 / 110.153 / 111.153
   - AAAA 记录（@）指向 2606:50c0:8000::153 / 8001::153 / 8002::153 / 8003::153
   - CNAME（www）指向 <你的用户名>.github.io
-- 回到 Pages 勾选 Enforce HTTPS。
+- 回到 Pages 勾选 Enforce HTTPS。 
